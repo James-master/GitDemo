@@ -1,3 +1,5 @@
+Git命令集合：
+
 
 配置
 git config --global user.name 'james'
@@ -6,8 +8,14 @@ git config --global user.email '853485477@qq.com'
 初始化
 git init
 
+创建仓库
+mkdir demo
+
 创建文件
 touch 文件
+
+编辑文件
+vi 文件名
 
 查看文件状态
 git status
@@ -33,9 +41,32 @@ i
 提交到本地仓库并备注
 git commit -m '备注'
 
+创建分支
+git checkout -b 分支名
+删除分支
+git branch -d 分支名
+
+切换到主分支
+git checkout master
+切换到其他分支
+git checkout 分支名
 
 
 
+查看你日志
+git log
+
+查看某个文件的日志
+cat readme.txt
+
+查看当前你目录
+pwd
+
+删除本地仓库
+rm -rf demo1/
+
+
+///////////////////////////////////////////////////////////////
 (1)创建 SSH key
 ssh-keygen -t rsa -C "853485477@qq.com"
 生成文件路径：C:\Users\jyx\.ssh
@@ -51,11 +82,13 @@ git remote add origin git@github.com:James-master/GitDemo.git
 (4).把本地仓库的所有内容推送到远程仓库
 git push -u origin master
 
-(5).从远程仓库克隆到本地仓库
+(5).从远程仓库克隆到本地仓库，只能克隆到主分支
 git clone git@github.com:James-master/GitDemo.git
+还要克隆其他分支
+git checkout -b 分支 origin/分支
 
-删除本地仓库
-rm -rf demo1/
+(6).拉取数据
+git pull
 
 
 
