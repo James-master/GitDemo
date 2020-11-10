@@ -1,0 +1,79 @@
+
+配置
+git config --global user.name 'james'
+git config --global user.email '853485477@qq.com'
+
+初始化
+git init
+
+创建文件
+touch 文件
+
+查看文件状态
+git status
+
+删除文件
+git rm --cached 文件
+
+添加单个文件到队列
+git add 文件
+
+添加所有文件到队列
+git add .
+
+添加某一类文件到队列
+git add *.html
+
+提交到本地创库
+git commit
+i
+退出备注
+:wq
+
+提交到本地仓库并备注
+git commit -m '备注'
+
+
+
+
+(1)创建 SSH key
+ssh-keygen -t rsa -C "853485477@qq.com"
+生成文件路径：C:\Users\jyx\.ssh
+id_rsa 私钥
+id_rsa.pub 公钥
+
+(2).GitHub上配置ssh key 
+github-->Settings-->SSH and GPG keys-->New SSH key-->key填入公钥
+
+(3).把本地仓库和远程仓库关联
+git remote add origin git@github.com:James-master/GitDemo.git
+
+(4).把本地仓库的所有内容推送到远程仓库
+git push -u origin master
+
+(5).从远程仓库克隆到本地仓库
+git clone git@github.com:James-master/GitDemo.git
+
+删除本地仓库
+rm -rf demo1/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
